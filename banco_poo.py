@@ -39,7 +39,7 @@ class Conta:
     return cls(numero,cliente)
     
   @property
-  def saldo(self):#usando o property para retornar os valores privados
+  def saldo(self):
     return self._saldo
 
   @property
@@ -156,9 +156,7 @@ class Saque(Transacao):
   def valor(self):
     return self._valor
   
-  #@valor.setter
-  #def valor(self,saldo):
-   # self.valor -= saldo
+  
 
   def registrar(self,conta,valor):
     transacao_efetuada = conta.sacar(valor)
@@ -173,9 +171,7 @@ class Deposito(Transacao):
   def valor(self):
     return self._valor
   
-  #@valor.setter
-  #def valor(self,saldo):
-   # self.valor += saldo
+  
 
   def registrar(self,conta,valor):
     transacao_efetuada = conta.depositar(valor)
@@ -319,20 +315,20 @@ def main():
     while True:
       opcao = input(menu)
 
-      if opcao == "1":#depósito não está indo para o extrato
+      if opcao == "1":
        depositar(clientes)
 
 
-      elif opcao == "2" :#saque está sendo armazenado no extrato normal,e o numero de saques também
+      elif opcao == "2" :
        sacar(clientes)
 
-      elif opcao == "3":# deu certo
+      elif opcao == "3":
        mostrar_extrato(clientes)
 
-      elif opcao == "4": #está funcionando
+      elif opcao == "4": 
         criar_usuario(clientes)
 
-      elif opcao == "5":#está funcionando
+      elif opcao == "5":
         numero_conta = len(contas)
         criar_conta(numero_conta,clientes,contas)
 
