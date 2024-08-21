@@ -17,6 +17,6 @@ As seguinte ferramenta foi usada na construção do projeto:
 - [ ] Banco usando POO
 
 <h3 align="center"> 
-	🚧  Python Vivo 🚀 Em construção...  🚧
+	🚧  Python Vivo 🚀 Concluído!  🚧
 </h3>
 
