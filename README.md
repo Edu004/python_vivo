@@ -1,4 +1,4 @@
-<h1 align="center">Python Vivo</h1>
+<h1 align="center">Sistema bancário com python</h1>
 <h1 align="center">
   <img alt="Foto de um banco como banner" src="./banner.jpg" />
 </h1>
